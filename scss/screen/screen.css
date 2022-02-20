@@ -10,7 +10,7 @@ body {
   width: inherit;
   height: inherit;
   position: absolute;
-  background-image: url("/notoriOS/img/bg/minimalistic.jpg");
+  background-image: url("https://angel-del-dev.github.io/notoriOS/img/bg/minimalistic.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }

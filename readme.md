@@ -2,6 +2,8 @@
 
 This is my attempt as a backend developer to make a visual portfolio
 
+[Link](https://angel-del-dev.github.io/notoriOS/)
+
 ---
 ## Functionality added
 * Double click on icons to display info

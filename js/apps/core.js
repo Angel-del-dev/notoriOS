@@ -4,6 +4,8 @@ import { addToToolbar } from './functions.js';
 
 const apps = document.getElementsByClassName("app");
 
+alert("This website is currently being developed and its in a very early state");
+
 // Event listeners
 
 for(let app of apps) {

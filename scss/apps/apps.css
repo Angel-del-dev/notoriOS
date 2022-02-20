@@ -1,0 +1,47 @@
+.apps-container {
+  width: inherit;
+  height: 90%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.apps-container .app {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.apps-container .app .app-details {
+  text-align: center;
+}
+
+.apps-container .app .app-details span {
+  color: #FAFAFF;
+}
+
+.apps-container .app:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.apps-container .app img {
+  height: 50%;
+  width: 50%;
+}
+/*# sourceMappingURL=apps.css.map */

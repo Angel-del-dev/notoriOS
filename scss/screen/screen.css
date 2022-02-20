@@ -1,0 +1,17 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.screen {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background-image: url("/img/bg/minimalistic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=screen.css.map */

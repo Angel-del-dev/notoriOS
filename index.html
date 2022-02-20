@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notoriOS</title>
+
+    <!-- Styles -->
+        <!-- Screen -->
+            <link rel="stylesheet" href="scss/screen/screen.css">
+        <!-- /Screen -->
+        <!-- Apps -->
+        <!-- /Apps -->
+           <link rel="stylesheet" href="scss/apps/apps.css">
+        <!-- Toolbar -->
+            <link rel="stylesheet" href="scss/toolbar/toolbar.css">
+            <!-- /Toolbar -->
+        <!-- Modal -->
+            <link rel="stylesheet" href="scss/modal/modal.css">
+        <!-- /Modal -->
+    <!-- /Styles -->
+
+    <!-- Javascript functions -->
+        <!-- Window sizing events -->
+            <script src=""></script>
+        <!-- /Window sizing events -->
+        
+        <!-- Apps -->
+            <script src="js/apps/core.js" type="module" defer></script>
+        <!-- /Apps -->
+    <!-- /Javascript functions -->
+</head>
+<body>
+    <div class="screen">
+
+       <div class="apps-container">
+            <div class="app" title="Double click to open" data-type="link" data-link="https://github.com/Angel-del-dev">
+                <div class="app-details">
+                    <img src="img/apps_logos/ie.png" alt="internet explorer" />
+                    <span class="filename">Github.link</span>
+                </div>
+            </div>
+            <div class="app" title="Double click to open" data-type="uenc" data-link="resources/pdf/cv.pdf">
+                <div class="app-details" title="Double click to open" data-type="uenc" >
+                    <img src="img/apps_logos/notebook.png" alt="notebook"  />
+                    <span class="filename">CV.uenc</span>
+               </div>
+            </div>
+            <!-- <div class="app" title="Double click to open" data-type="arch" >
+                <div class="app-details">
+                    <img src="img/apps_logos/folder.png" alt="notebook" />
+                    <span class="filename">Img.arch</span>
+               </div>
+            </div> -->
+       </div>
+       <div class="toolbar-container">
+            <div class="toolbar" id="toolbar">
+                <!-- <div class="toolbar-item">
+                    <img src="img/apps_logos/notebook.png" alt="notebook" />
+                </div>
+                <div class="toolbar-item">
+                    <img src="img/apps_logos/ie.png" alt="internet explorer" />
+                </div> -->
+            </div>
+       </div>
+    </div>
+    <div id="pdf-modal" class="no-active">
+        <div class="modal-header" id="close-modal">
+            <div class="close-modal-container">&times</div>
+        </div>
+        <div class="modal-body">
+            <iframe src="about:blank" frameborder="0" id="pdf"></iframe>
+        </div>
+    </div>
+</body>
+</html>

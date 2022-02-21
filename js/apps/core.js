@@ -1,4 +1,4 @@
-import { linkOpener, pdfShow, createIcons } from './functions.js';
+import { linkOpener, pdfShow, textShow, createIcons } from './functions.js';
 import { toolbar } from './functions.js';
 import { addToToolbar } from './functions.js';
 
@@ -8,8 +8,12 @@ alert("This website is currently being developed and its in a very early state")
 
 // Event listeners
 
+const isMobile = navigator.userAgentData.mobile;
+
+const event = (isMobile) ? "click" : "dblclick";
+
 for(let app of apps) {
-    app.addEventListener('dblclick', function(e) {
+    app.addEventListener(event, function(e) {
         const appSelected = e.target;
 
         if(appSelected.classList.contains('app')) {
@@ -36,6 +40,9 @@ function checkType(app, type) {
             pdfShow(app);
             break;
         case 'arch':
+            break;
+        case 'enc':
+            textShow();
             break;
     }
     addToToolbar(app);

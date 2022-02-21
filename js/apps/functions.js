@@ -29,6 +29,19 @@ export function pdfShow(app) {
     modal.classList.add('active');
 }
 
+export function textShow() {
+    const modal = document.getElementById('pdf-modal');
+
+    if(modal.classList.contains('active')) {    
+        modal.classList.remove('active');
+        modal.classList.add('no-active');
+        return;
+    }
+    
+    modal.classList.remove('no-active');
+    modal.classList.add('active');
+}
+
 export function addToToolbar(app) {
     const type = app.getAttribute('data-type');
     const keys = Object.keys(toolbar);
@@ -79,8 +92,9 @@ function checkType(type) {
 
     switch(type) {
         case 'uenc':
+            return resourceFullUrl+"pdf.png";
+        case 'enc':
             return resourceFullUrl+"notebook.png";
-        // case '';
     }
 }
 

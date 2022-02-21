@@ -15,6 +15,7 @@ $toolbar-bg: rgba(17,17,17,0.8);
 
 .toolbar {
     padding: 10px;
+    min-width: 20vmin;
     width: fit-content;
     height: 10vmin;
     z-index: 10;
